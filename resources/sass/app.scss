@@ -1,14 +1,40 @@
+/* footer */
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
 
-// Variables
-@import 'variables';
+    a {
+        color: #555;
+    }
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+    a:hover {
+        color: #222;
+    }
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    small {
+        float: left;
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+
+        li {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+
+    img.brand-icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .slogon {
+        font-size: 13px;
+        font-weight: bold;
+    }
 }

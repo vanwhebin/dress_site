@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+
+Route::get('/', function(){
     return view('welcome');
 });
+Route::get('/help', 'StaticPagesController@help')->name('help');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+// Route::get('/policy', 'StaticPagesController@policy')->name('policy');
+
+Route::get('/signup', 'UsersController@create')->name('signup');
+Route::get('/login', 'UsersController@login')->name('login');
