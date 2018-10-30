@@ -2,7 +2,7 @@
   <footer class="footer">
     <small class="slogon">
       <img class="brand-icon" src="#">
-      <a href="https://laravel-china.org/courses">
+      <a href="javascript:void(0)">
         刻意练习，每日精进
       </a>
     </small>
