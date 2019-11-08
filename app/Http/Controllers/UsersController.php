@@ -22,7 +22,8 @@ class UsersController extends Controller
 
    public function login()
    {
-       echo __FUNCTION__;
+       // echo __FUNCTION__;
+       return view('users.show');
    }
 
    public function show(User $user)

@@ -12,6 +12,11 @@ class StaticPagesController extends Controller
         return view('');
     }
 
+    public function home()
+    {
+        return view('static_pages.home');
+    }
+
     public function about()
     {
         echo __FUNCTION__;

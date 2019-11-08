@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-    @include('layouts._header')
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <div class="container">
-      <div class="col-md-offset-1 col-md-10">
-        @yield('content')
-        @include('layouts._footer')
-      </div>
-    </div>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>@yield('title', 'Laravel App') - Laravel 入门教程</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+@include('layouts._header')
+<div class="container">
+    <main role="main">
+    @yield('content')
+    </main>
+    @include('layouts._footer')
+
+</div>
+</body>
 </html>

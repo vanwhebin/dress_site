@@ -1,15 +1,37 @@
-<div class="col-md-12">
-  <footer class="footer">
-    <small class="slogon">
-      <img class="brand-icon" src="#">
-      <a href="javascript:void(0)">
-        刻意练习，每日精进
-      </a>
-    </small>
-    <nav>
-      <ul>
-        <li><a href="{{ route('about') }}">关于</a></li>
-      </ul>
-    </nav>
-  </footer>
-</div>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md">
+            <img class="mb-2" src="/svg/pc.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="javascript:void(0)">刻意练习，每日精进</a></li>
+                <li><a class="text-muted" href="#">Random feature</a></li>
+                <li><a class="text-muted" href="#">Team feature</a></li>
+                <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                <li><a class="text-muted" href="#">Another one</a></li>
+                <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Resource</a></li>
+                <li><a class="text-muted" href="#">Resource name</a></li>
+                <li><a class="text-muted" href="#">Another resource</a></li>
+                <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{{ route('about') }}">关于</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
