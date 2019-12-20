@@ -3,7 +3,7 @@
  * @Description: 
  * @Author: vanwhebin
  * @Date: 2018-10-28 22:51:53
- * @LastEditTime: 2018-10-28 23:08:52
+ * @LastEditTime: 2018-10-28 23:58:22
  * @LastEditors: your name
  */
 namespace App\Http\Controllers;
@@ -14,6 +14,11 @@ use App\Models\User;
 
 class UsersController extends Controller
 {
+    /**
+        * @msg: 
+        * @param {type} 
+        * @return: 
+        */
    public function create()
    {
        return view('users.create');
@@ -30,4 +35,16 @@ class UsersController extends Controller
    {
        return view('users.show', compact('user'));
    }
+
+
+   public function store(Request $request)
+   {
+        $this->validate($request, [
+            'name'      => 'required|max:50', 
+            'email'     => 'required|email|unique:users|max:255', 
+            'password'  => 'required|confirmed|min:6', 
+        ]);
+        return;
+   }
+
 }
