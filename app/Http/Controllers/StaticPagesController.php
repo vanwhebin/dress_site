@@ -32,4 +32,10 @@ class StaticPagesController extends Controller
         echo __FUNCTION__;
     }
 
+    public function curl()
+    {
+        sleep(5);
+        return json_encode(array_fill(0, 100, 'test'));
+    }
+
 }

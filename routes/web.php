@@ -16,6 +16,7 @@
 //     return view('welcome');
 // });
 Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/test', 'StaticPagesController@curl')->name('curl');
 Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 // Route::get('/policy', 'StaticPagesController@policy')->name('policy');
@@ -29,4 +30,6 @@ Route::resource('users', 'UsersController');
 // Route::post('login', 'SessionsController@store')->name('login');
 // Route::delete('logout', 'SessionsController@destroy')->name('logout');
 
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
