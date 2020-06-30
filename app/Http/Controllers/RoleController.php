@@ -27,10 +27,10 @@ class RoleController extends Controller
     public function index()
     {
         $roles = Role::all();
-        foreach($roles as $role) {
-            dump($role->permissions()->pluck('name'));
-        }
-        exit;
+        // foreach($roles as $role) {
+        //     dump($role->permissions()->pluck('name'));
+        // }
+        // exit;
         return view('roles.index')->with('roles', $roles);
     }
 
