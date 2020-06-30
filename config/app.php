@@ -157,10 +157,11 @@ return [
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
         // Illuminate\Translation\TranslationServiceProvider::class,
-        Overtrue\LaravelLang\TranslationServiceProvider::class,
+        Overtrue\LaravelLang\TranslationServiceProvider::class, // 语言包
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class, // IDE 数周提示
+        // Zizaco\Entrust\EntrustServiceProvider::class, //  权限服务
         /*
          * Package Service Providers...
          */
